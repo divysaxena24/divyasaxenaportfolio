@@ -15,6 +15,9 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Divya Saxena Portfolio Website",
   description: "Portfolio of Divya Saxena, an AI-Focused Full Stack Developer specializing in building scalable AI-powered applications.",
+  icons: {
+    icon: "/icon.png",
+  },
 };
 
 export default function RootLayout({
