@@ -1,69 +1,100 @@
-# Divya Saxena | Portfolio Website
+# 💎 Divya Saxena | FAANG-Level Portfolio
 
-A premium, FAANG-level portfolio website built with modern web technologies, featuring high-end glassmorphism aesthetics, interactive animations, and a secure contact system.
+![Next.js](https://img.shields.io/badge/Next.js-15-black?style=for-the-badge&logo=next.js)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3.4-38B2AC?style=for-the-badge&logo=tailwind-css)
+![Framer Motion](https://img.shields.io/badge/Framer_Motion-6366F1?style=for-the-badge&logo=framer)
+![Vercel](https://img.shields.io/badge/Vercel-Deployed-000000?style=for-the-badge&logo=vercel)
+![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
 
-![Portfolio Preview](https://divyasaxena.vercel.app/og-image.png)
+A premium, high-performance portfolio website engineered for excellence. This project showcases a blend of cutting-edge frontend aesthetics and robust backend logic, featuring advanced glassmorphism, cinematic animations, and a secure verification-based contact system.
 
-## 🚀 Key Features
+---
 
-- **Elite UI/UX**: Professional dark-themed design with advanced glassmorphism and ambient mesh gradients.
-- **Dynamic Hero Section**: Interactive typing effects, live "Available for Work" indicator, and instant resume download.
-- **Panoramic Projects Showcase**: Horizontal cinematic cards with interactive tech stacks and GitHub/Live links.
-- **Interactive Skills Ecosystem**: High-density tech hub with category-specific icons and staggered entrance animations.
-- **Professional Journey Timeline**: Dual-sided chronological experience timeline with interactive nodes and accent borders.
-- **Secure OTP Contact Flow**: Multi-step verification system powered by Nodemailer for high-quality communication.
-- **Responsive Architecture**: Fully optimized for mobile, tablet, and desktop viewing.
+## ✨ Premium Features
 
-## 🛠️ Tech Stack
+### 🎨 Design & Aesthetics
+- **FAANG-Inspired Glassmorphism**: High-density blur effects with dynamic border glows and ambient mesh gradients.
+- **Cinematic Experience**: Staggered entrance animations, parallax effects, and smooth layout transitions powered by Framer Motion.
+- **Responsive Symmetry**: Precision-engineered layouts for mobile, tablet, and 4K displays.
 
-- **Frontend**: [Next.js 15](https://nextjs.org/) (App Router), [React](https://reactjs.org/)
-- **Styling**: [Tailwind CSS](https://tailwindcss.com/)
-- **Animations**: [Framer Motion](https://www.framer.com/motion/)
-- **Icons**: [Lucide React](https://lucide.dev/)
-- **Form Handling**: [Nodemailer](https://nodemailer.com/) (OTP Verification)
-- **Deployment**: [Vercel](https://vercel.com/)
+### 🛠️ Technical Innovations
+- **Secure OTP Verification**: Custom multi-step contact flow using **Nodemailer** and a server-side OTP store for anti-spam security.
+- **Panoramic Project Showcase**: Interactive project cards with integrated tech-stack badges and real-time hover states.
+- **Dynamic Experience Timeline**: A professional, dual-sided chronological journey with interactive timeline nodes.
+- **Live Status Indicator**: Real-time availability status integrated directly into the Hero section.
 
-## 📦 Getting Started
+---
 
-### Prerequisites
+## 🛠️ Technical Stack
 
-- Node.js (v18 or higher)
-- npm or yarn
+| Category | Technologies |
+| :--- | :--- |
+| **Framework** | Next.js 15 (App Router), React 19 |
+| **Styling** | Tailwind CSS, Lucide Icons |
+| **Animations** | Framer Motion, React-Type-Animation |
+| **Backend** | Next.js API Routes, Nodemailer |
+| **Infrastructure** | Vercel, Git/GitHub |
 
-### Installation
+---
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/divysaxena24/Portfolio.git
-   cd Portfolio
-   ```
+## 📂 Project Architecture
 
-2. Install dependencies:
-   ```bash
-   npm install
-   ```
+```text
+Portfolio/
+├── src/
+│   ├── app/                # Next.js App Router (Pages & API)
+│   │   ├── api/            # Serverless functions (OTP logic)
+│   │   └── layout.tsx      # Global shell & SEO metadata
+│   ├── components/         # Modular React components
+│   │   ├── sections/      # Section-specific components (Hero, Skills, etc.)
+│   │   └── ui/            # Reusable primitive components
+│   ├── lib/               # Shared utilities (Nodemailer, cn helper)
+│   └── styles/            # Global design tokens
+├── public/                # Static assets & branding
+└── .env.local             # Environment configuration (SMTP)
+```
 
-3. Setup Environment Variables:
-   Create a `.env.local` file in the root directory and add your SMTP credentials:
-   ```env
-   EMAIL_USER=your-email@gmail.com
-   EMAIL_PASS=your-google-app-password
-   ```
-   Use a 16-character Google App Password for `EMAIL_PASS`, not your regular password.
+---
 
-4. Run the development server:
-   ```bash
-   npm run dev
-   ```
+## 🚀 Getting Started
 
-5. Open [http://localhost:3000](http://localhost:3000) to view your site.
+### 1. Installation
+```bash
+git clone https://github.com/divysaxena24/Divya_Saxena_Portfolio.git
+cd Divya_Saxena_Portfolio
+npm install
+```
 
-## 📝 License
+### 2. Configure Environment
+Create a `.env.local` file with your secure SMTP credentials:
+```env
+EMAIL_USER=your-email@gmail.com
+EMAIL_PASS=your-google-app-password
+```
+> [!IMPORTANT]
+> Use a Google App Password (16 characters) for `EMAIL_PASS`, not your standard account password.
 
-Distributed under the MIT License. See `LICENSE` for more information.
+### 3. Development
+```bash
+npm run dev
+```
 
-## 👤 Contact
+---
+
+## 🎯 Optimization & SEO
+- **Core Web Vitals**: Optimized for LCP and FID with Next.js image optimization and efficient font loading.
+- **Semantic HTML**: Fully accessible structure using descriptive tags for maximum SEO reach.
+- **Modern Performance**: Zero-flicker transitions and minimal bundle size.
+
+---
+
+## 👤 Contact & Support
 
 Divya Saxena - [divysaxena2402@gmail.com](mailto:divysaxena2402@gmail.com)
 
-Project Link: [https://github.com/divysaxena24/Portfolio](https://github.com/divysaxena24/Portfolio)
+**Portfolio Link**: [https://github.com/divysaxena24/Divya_Saxena_Portfolio](https://github.com/divysaxena24/Divya_Saxena_Portfolio)
+
+---
+
+## 📝 License
+Distributed under the MIT License. See `LICENSE` for details.
