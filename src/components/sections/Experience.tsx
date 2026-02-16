@@ -2,7 +2,7 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import { Briefcase, Calendar, ChevronRight } from "lucide-react";
+import { Calendar, ChevronRight } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 const experiences = [
@@ -54,49 +54,31 @@ const Experience = () => {
                     />
                 </motion.div>
 
-                <div className="max-w-6xl mx-auto relative">
+                <div className="max-w-4xl mx-auto relative pl-8 md:pl-0">
                     {/* Vertical Timeline Line */}
-                    <div className="absolute left-0 md:left-1/2 top-0 bottom-0 w-px bg-gradient-to-b from-transparent via-white/10 to-transparent hidden md:block" />
+                    <div className="absolute left-0 top-0 bottom-0 w-px bg-gradient-to-b from-transparent via-white/10 to-transparent" />
 
                     {experiences.map((exp, idx) => (
                         <motion.div
                             key={idx}
-                            initial={{ opacity: 0, y: 30 }}
-                            whileInView={{ opacity: 1, y: 0 }}
+                            initial={{ opacity: 0, x: 20 }}
+                            whileInView={{ opacity: 1, x: 0 }}
                             viewport={{ once: true }}
                             transition={{ duration: 0.6, delay: idx * 0.1 }}
-                            className={cn(
-                                "relative mb-16 last:mb-0 flex flex-col md:flex-row",
-                                idx % 2 === 0 ? "md:flex-row-reverse" : ""
-                            )}
+                            className="relative mb-16 last:mb-0 ml-8"
                         >
                             {/* Timeline Node */}
-                            <div className="absolute left-[-8px] md:left-1/2 md:translate-x-[-50%] top-0 md:top-8 w-4 h-4 rounded-full bg-primary shadow-[0_0_15px_rgba(99,102,241,0.6)] border-4 border-background z-20" />
-
-                            {/* Date Label (Opposite Side on Desktop) */}
-                            <div className={cn(
-                                "hidden md:flex w-[48%] pt-8 text-primary font-bold tracking-wider text-base uppercase",
-                                idx % 2 === 0 ? "justify-start pl-12 text-left" : "justify-end pr-12 text-right"
-                            )}>
-                                <div className="flex items-center gap-2 h-5">
-                                    <Calendar className="w-5 h-5" />
-                                    {exp.period}
-                                </div>
-                            </div>
+                            <div className="absolute left-[-40px] top-10 w-4 h-4 rounded-full bg-primary shadow-[0_0_15px_rgba(99,102,241,0.6)] border-4 border-background z-20" />
 
                             {/* Content Card */}
-                            <div className={cn(
-                                "w-full md:w-[48%] group",
-                                idx % 2 === 0 ? "md:pl-12" : "md:pr-12"
-                            )}>
+                            <div className="w-full group">
                                 <div className="glass p-8 rounded-[2rem] border border-white/5 group-hover:border-primary/30 transition-all duration-500 shadow-xl hover:shadow-primary/5 relative overflow-hidden">
                                     {/* Accent border strip */}
                                     <div className="absolute top-0 bottom-0 left-0 w-1 bg-primary/40 rounded-full" />
 
                                     <div className="relative z-10">
                                         <div className="flex flex-col gap-1 mb-4">
-                                            {/* Mobile-only Date */}
-                                            <div className="md:hidden flex items-center gap-2 text-primary font-bold tracking-wider text-sm uppercase">
+                                            <div className="flex items-center gap-2 text-primary font-bold tracking-wider text-sm uppercase">
                                                 <Calendar className="w-4 h-4" />
                                                 {exp.period}
                                             </div>
@@ -126,9 +108,6 @@ const Experience = () => {
                                     </div>
                                 </div>
                             </div>
-
-                            {/* Spacer for desktop layout */}
-                            <div className="hidden md:block w-[4%]" />
                         </motion.div>
                     ))}
                 </div>

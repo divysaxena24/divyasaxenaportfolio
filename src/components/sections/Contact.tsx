@@ -110,9 +110,7 @@ const Contact = () => {
                                     </div>
                                 </div>
 
-                                <div className="pt-8 text-xs text-white/20 font-medium tracking-widest uppercase">
-                                    Based in India • Open to Global Roles
-                                </div>
+
                             </div>
                         </div>
 
