@@ -1,4 +1,4 @@
-# 💎 Divya Saxena | FAANG-Level Portfolio
+# Divya Saxena | Portfolio
 
 ![Next.js](https://img.shields.io/badge/Next.js-15-black?style=for-the-badge&logo=next.js)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3.4-38B2AC?style=for-the-badge&logo=tailwind-css)
@@ -13,15 +13,15 @@ A premium, high-performance portfolio website engineered for excellence. This pr
 ## ✨ Premium Features
 
 ### 🎨 Design & Aesthetics
-- **FAANG-Inspired Glassmorphism**: High-density blur effects with dynamic border glows and ambient mesh gradients.
-- **Cinematic Experience**: Staggered entrance animations, parallax effects, and smooth layout transitions powered by Framer Motion.
-- **Responsive Symmetry**: Precision-engineered layouts for mobile, tablet, and 4K displays.
+- **Modern Glassmorphism**: Clean blur effects with dynamic border glows and ambient gradients.
+- **Smooth Animations**: Staggered entrance animations and seamless transitions powered by Framer Motion.
+- **Fully Responsive**: Optimized layouts for mobile, tablet, and desktop displays.
 
-### 🛠️ Technical Innovations
-- **Secure OTP Verification**: Custom multi-step contact flow using **Nodemailer** and a server-side OTP store for anti-spam security.
-- **Panoramic Project Showcase**: Interactive project cards with integrated tech-stack badges and real-time hover states.
-- **Dynamic Experience Timeline**: A professional, dual-sided chronological journey with interactive timeline nodes.
-- **Live Status Indicator**: Real-time availability status integrated directly into the Hero section.
+### 🛠️ Technical Features
+- **Secure OTP Verification**: Multi-step contact form with email verification using Nodemailer.
+- **Interactive Project Showcase**: Project cards with tech stack badges and hover effects.
+- **Professional Timeline**: Clean chronological experience display with timeline nodes.
+- **Live Availability Status**: Real-time status indicator in the Hero section.
 
 ---
 
