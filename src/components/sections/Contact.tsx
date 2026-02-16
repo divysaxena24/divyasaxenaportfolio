@@ -84,35 +84,40 @@ const Contact = () => {
                         <p className="text-text-secondary">Let&apos;s build something amazing together.</p>
                     </div>
 
-                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-stretch">
                         {/* Info Part */}
-                        <div>
-                            <div className="glass p-8 rounded-3xl border border-white/5 space-y-8">
-                                <div>
-                                    <h3 className="text-xl font-bold text-white mb-4">Contact Information</h3>
-                                    <div className="space-y-4">
-                                        <div className="flex items-center gap-4 text-text-secondary">
-                                            <div className="p-3 rounded-xl bg-primary/10 text-primary">
-                                                <Mail className="w-5 h-5" />
+                        <div className="flex">
+                            <div className="glass p-8 rounded-3xl border border-white/5 space-y-8 w-full flex flex-col justify-between">
+                                <div className="space-y-6">
+                                    <div>
+                                        <h3 className="text-2xl font-bold text-white mb-2">Connect Directly</h3>
+                                        <p className="text-text-secondary text-sm mb-6">Have a specific inquiry or just want to say hi? My inbox is always open.</p>
+                                        <div className="space-y-4">
+                                            <div className="flex items-center gap-4 text-text-secondary group cursor-pointer hover:text-primary transition-colors">
+                                                <div className="p-3 rounded-xl bg-primary/10 text-primary group-hover:bg-primary group-hover:text-white transition-all">
+                                                    <Mail className="w-5 h-5" />
+                                                </div>
+                                                <span className="font-medium">divysaxena2402@gmail.com</span>
                                             </div>
-                                            <span>divysaxena2402@gmail.com</span>
                                         </div>
+                                    </div>
 
+                                    <div className="pt-8 border-t border-white/5">
+                                        <h4 className="text-lg font-bold text-white mb-3">Verified Communication</h4>
+                                        <p className="text-sm text-text-secondary leading-relaxed">
+                                            To ensure high-quality interactions and prevent automated spam, I utilize a secure OTP verification system. It’s a quick, one-time process that keeps our professional channel clean and reliable.
+                                        </p>
                                     </div>
                                 </div>
 
-                                <div className="pt-8 border-t border-white/5">
-                                    <h4 className="text-white font-bold mb-4">Why OTP Verification?</h4>
-                                    <p className="text-sm text-text-secondary leading-relaxed">
-                                        To ensure secure communication and prevent spam, I use a simple OTP verification system.
-                                        It takes just a few seconds and keeps our conversation professional.
-                                    </p>
+                                <div className="pt-8 text-xs text-white/20 font-medium tracking-widest uppercase">
+                                    Based in India • Open to Global Roles
                                 </div>
                             </div>
                         </div>
 
                         {/* Form Part */}
-                        <div className="glass p-8 rounded-3xl border border-white/5 min-h-[400px] flex flex-col justify-center">
+                        <div className="glass p-8 rounded-3xl border border-white/5 min-h-[450px] flex flex-col justify-center w-full">
                             {error && (
                                 <div className="mb-6 p-4 bg-red-500/10 border border-red-500/20 text-red-500 text-sm rounded-xl">
                                     {error}
