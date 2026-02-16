@@ -66,7 +66,7 @@ const Experience = () => {
                             viewport={{ once: true }}
                             transition={{ duration: 0.6, delay: idx * 0.1 }}
                             className={cn(
-                                "relative mb-16 last:mb-0 flex flex-col md:flex-row items-center",
+                                "relative mb-16 last:mb-0 flex flex-col md:flex-row",
                                 idx % 2 === 0 ? "md:flex-row-reverse" : ""
                             )}
                         >
@@ -75,11 +75,11 @@ const Experience = () => {
 
                             {/* Date Label (Opposite Side on Desktop) */}
                             <div className={cn(
-                                "hidden md:flex w-[48%] items-center text-primary font-bold tracking-wider text-sm uppercase",
-                                idx % 2 === 0 ? "justify-end pr-12" : "justify-start pl-12"
+                                "hidden md:flex w-[48%] pt-8 text-primary font-bold tracking-wider text-base uppercase",
+                                idx % 2 === 0 ? "justify-start pl-12 text-left" : "justify-end pr-12 text-right"
                             )}>
-                                <div className="flex items-center gap-2">
-                                    <Calendar className="w-4 h-4" />
+                                <div className="flex items-center gap-2 h-5">
+                                    <Calendar className="w-5 h-5" />
                                     {exp.period}
                                 </div>
                             </div>
