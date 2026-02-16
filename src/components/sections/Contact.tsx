@@ -118,6 +118,11 @@ const Contact = () => {
 
                         {/* Form Part */}
                         <div className="glass p-8 rounded-3xl border border-white/5 min-h-[450px] flex flex-col justify-center w-full">
+                            <div className="mb-8">
+                                <h3 className="text-2xl font-bold text-white mb-2">Send a Message</h3>
+                                <p className="text-text-secondary text-sm">Fill out the form below and I&apos;ll get back to you shortly.</p>
+                            </div>
+
                             {error && (
                                 <div className="mb-6 p-4 bg-red-500/10 border border-red-500/20 text-red-500 text-sm rounded-xl">
                                     {error}
